@@ -1,0 +1,603 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+.full .nav {
+  background-color: white;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  border: 1px solid rgba(154, 154, 154, 0.1);
+  z-index: 10;
+  top: 0;
+  position: sticky;
+}
+
+.nav .title {
+  width: 40%;
+  height: 12vh;
+  /* background-color: rgb(9, 10, 10); */
+  display: flex;
+  align-items: center;
+  float: left;
+  color: rgb(126, 34, 206);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nav .title a {
+  text-decoration: none;
+
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: rgb(121, 33, 228);
+  tab-size: 4;
+  padding-left: 50px;
+  font-display: bold;
+}
+.menu {
+  width: 52%;
+  height: 12vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .ul li {
+  list-style: none;
+  margin-left: 13px;
+  font-size: 15px;
+  font-weight: 450;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 0 solid #e5e7eb;
+    color:   #e6e7ea;
+}
+.menu .ul li a:hover {
+  text-decoration-line: underline;
+  color: rgb(126, 34, 206);
+  
+}
+
+.menu .ul li a {
+  text-decoration: none;
+  color:  rgb(56, 56, 56);
+ font-family: sans-serif;
+  
+
+}
+
+.nav .btn {
+  width: 13%;
+  height: 12vh;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .btn button {
+  padding: 9px 10px;
+  border: 2px solid rgb(140, 14, 251) ;
+  border-radius: 0.5rem;
+  margin-left: 8px;
+  font-weight: 600;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(142, 14, 255);
+}
+.nav .btn button:hover {
+  background-color:rgb(110, 0, 206);
+}
+/* hr{
+    color: grey;
+    opacity: 0.5;
+} */
+.full .nav2 {
+  width: 100%;
+  height: 7vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid rgba(153, 153, 153, 0.1);
+  z-index: 10;
+  top: 12vh;
+  position: sticky;
+  /* background-color: rgb(253, 249, 249); */
+  border-bottom-width: 2px;
+}
+.full .nav2 .lang {
+  width: 50%;
+  height: 6vh;
+  /* background-color: brown; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 28px;
+}
+
+.full .nav2 .lang ul {
+  width: 100%;
+  height: 6vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full .nav2 .lang ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.full .nav2 .lang ul li a {
+  text-decoration: none;
+  color: rgb(103, 0, 193);
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.full .nav2 .lang ul li a:hover {
+  text-decoration-line: underline;
+  color: rgb(126, 34, 206);
+}
+.full .nav2 .home img {
+  width: 30%;
+  height: 30%;  
+  color: rgb(103, 0, 193);
+  margin-left: 60px;
+}
+.full .nav2 .search input {
+  padding: 7px 12px;
+  border: 2px solid rgb(103, 0, 193);
+  border-radius: 4px;
+  height: 30px;
+  width: 250px;
+}
+.full .nav2 .search input:hover {
+  border: 3px solid rgba(103, 0, 193);
+}
+.full .nav2 .search input::placeholder {
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.full .about {
+  width: 100%;
+  height: 60vh;
+  /* background-color: cyan; */
+  position: relative;
+  z-index: 9;
+}
+.full .about .wel {
+  width: 50%;
+  height: 50vh;
+  /* background-color: red; */
+  float: left;
+  /* display: flex; */
+
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.full .about .wel .txt h1 {
+  color: black;
+  margin-left: 145px;
+  margin-top: 70px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: blink;
+  font-size: 35px;
+}
+.full .about .wel .txt h2 {
+  margin-left: 145px;
+}
+.full .about .wel .txt h1 span {
+  color: rgb(103, 0, 193);
+}
+.full .about .pic {
+  width: 50%;
+  height: 60vh;
+  /* background-color: blue; */
+  float: right;
+}
+.full .about .pic img {
+  width: 85%;
+  height: 57vh;
+  border: 2px solid beige;
+  border-radius: 4px;
+  margin-top: 0px;
+  margin-left: 0px;
+  box-sizing: border-box;
+  box-shadow: 5px;
+  clip-path: polygon(13% 0px, 100% 0%, 100% 100%, 0px 100%);
+}
+.full .about .wel .para p {
+  font: 500;
+  font-size: 15px;
+  margin-left: 145px;
+  margin-right: 110px;
+  text-justify: auto;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  tab-size: 4;
+  color: rgb(145, 152, 155);
+  border: 0 solid #e5e7eb;
+}
+.full .about .wel .course-btn {
+  margin-left: 145px;
+  margin-top: 25px;
+}
+.full .about .wel .course-btn button {
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  padding: 14px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-weight: 600;
+  cursor: pointer;
+}
+.full .about .wel .course-btn #grey {
+  background-color: rgb(209, 213, 219);
+  border: 2px solid rgb(209, 213, 219);
+  color: black;
+  font-weight: 600;
+}
+.full .h1{
+  width: 100%;
+  height: 10vh;
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+.full .h1 h1{
+  
+  font-weight: 700;
+  font-family: sans-serif;
+  
+}
+.full .cards {
+  height: 80vh;
+  width: 100%;
+  /* background-color: #e5e7eb; */
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  
+
+}
+.full .cards .py{
+  width: 28%;
+  height: 82vh;
+  background-color: rgb(234, 231, 231);
+  border-radius:15px ;
+  box-shadow: inset;
+  
+}
+.full .cards .py .detail{
+  width:100%;
+  /* background-color: red; */
+  height: 35vh;
+  margin-top: 25px;
+
+}
+.full .cards .py .detail .free{
+     margin-left: 25px;
+     letter-spacing: .1rem;
+     display: block;
+     font-family: ui-sans-serif,system-ui;
+     opacity: .6;
+     font-size: 13px;
+
+}
+
+.full .cards .py .detail  .duration{
+  margin-left: 25px;
+  font-size: 17px;
+
+}
+.full .cards .py .detail p{
+  margin-left: 25px;
+
+}
+.full .cards .py .st-watch{
+  margin-left: 25px;
+  width: 112px;
+  background-color:rgb(129, 43, 203) ;
+  padding: 7px 3px;
+  color: white;
+  font-weight: 500;
+  border-radius: 17px;
+  border: 0px solid rgb(111, 18, 193) ;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.full .cards .js{
+  width: 27%;
+  height: 82vh;
+  background-color:rgb(234, 231, 231);
+  border-radius:15px ;
+  
+}
+.full .cards .js .detail{
+  width:100%;
+  /* background-color: red; */
+  height: 35vh;
+  margin-top: 25px;
+
+}
+.full .cards .js .detail .free{
+     margin-left: 25px;
+     letter-spacing: .1rem;
+     display: block;
+     font-family: ui-sans-serif,system-ui;
+     opacity: .6;
+     font-size: 13px;
+
+}
+
+.full .cards .js .detail  .duration{
+  margin-left: 25px;
+  font-size: 17px;
+
+}
+.full .cards .js .detail p{
+  margin-left: 25px;
+  /* line-height: 18px; */
+
+}
+.full .cards .js .st-watch{
+  margin-left: 25px;
+  width: 112px;
+  background-color:rgb(129, 43, 203) ;
+  padding: 7px 3px;
+  color: white;
+  font-weight: 500;
+  border-radius: 17px;
+  border: 0px solid rgb(111, 18, 193) ;
+  font-size: .875rem;
+  /* line-height: 1.25rem; */
+  text-align: center;
+  
+}
+.full .cards .react{
+  width: 28%;
+  height: 82vh;
+  background-color: rgb(234, 231, 231);
+  border-radius:15px ;
+
+}
+.full .cards .react .detail{
+  width:100%;
+  /* background-color: red; */
+  height: 35vh;
+  margin-top: 25px;
+
+}
+.full .cards .react .detail .free{
+     margin-left: 25px;
+     letter-spacing: .1rem;
+     display: block;
+     font-family: ui-sans-serif,system-ui;
+     opacity: .6;
+     font-size: 13px;
+
+}
+
+.full .cards .react .detail  .duration{
+  margin-left: 25px;
+  font-size: 17px;
+
+}
+.full .cards .react .detail p{
+  margin-left: 25px;
+
+}
+.full .cards .react .st-watch{
+  margin-left: 25px;
+  width: 112px;
+  background-color:rgb(129, 43, 203) ;
+  padding: 7px 3px;
+  color: white;
+  font-weight: 500;
+  border-radius: 17px;
+  border: 0px solid rgb(111, 18, 193) ;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+.full .cards img{
+  width: 100%;
+  border-radius: 15px;
+}
+.full .review{
+  width: 100%;
+  height: 15vh;
+  /* background-color: red; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  margin-top: 20px;
+}
+.full .review h2{
+
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.full .feed{
+  width: 100%;
+  height: 70vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.full .feed .feed1 {
+  width: 45%;
+  height: 50vh;
+  background-color: rgb(243,244,246);
+  border: 0px solid white;
+  border-radius: 3px;
+}
+
+.full .feed .feed1 .quote {
+ width: 35%;
+ height: 40px;
+ /* background-color: red; */
+margin-left: 50px;
+ margin-top: 20px;
+
+
+}
+.full .feed .feed1 .quote img{
+  width: 25%;
+  height: 25px;
+}
+.full .feed .feed1 .m-review{
+  width: 85%;
+  
+  height: 20vh;
+  /* background-color: blue; */
+  margin-left: 50px;
+}
+.full .feed .feed1 .name .mohit{
+display: block;
+margin-left: 50px;
+/* margin-top: 6px; */
+font-weight: 500;
+
+}
+.full .feed .feed1 .name .dev{
+  opacity: .6;
+  margin-top: 5px;
+  margin-left: 50px;
+
+}
+.full .feed .feed2 {
+  width: 45%;
+  height: 50vh;
+  background-color:rgb(243,244,246);
+  border: 0px solid white;
+  border-radius: 3px;
+}
+.full .feed .feed2 .quote {
+  width: 35%;
+  height: 40px;
+  /* background-color: red; */
+ margin-left: 50px;
+  margin-top: 20px;
+ 
+ 
+ }
+ .full .feed .feed2 .quote img{
+   width: 25%;
+   height: 25px;
+ }
+ .full .feed .feed2 .m-review{
+   width: 85%;
+   
+   height: 20vh;
+   /* background-color: blue; */
+   margin-left: 50px;
+ }
+ .full .feed .feed2 .name .mohit{
+ display: block;
+ margin-left: 50px;
+ /* margin-top: 6px; */
+ font-weight: 500;
+ 
+ }
+ .full .feed .feed2 .name .dev{
+   opacity: .6;
+   margin-top: 5px;
+   margin-left: 50px;
+ 
+ }
+ .full .footer{
+  width: 100%;
+  height: 15vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+.full .footer .l-foot{
+  width: 48%;
+  height: 10vh;
+  float: left;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.full .footer .l-foot img{
+  width: 50px;
+  height: 50px;
+   
+}
+.full .footer .l-foot .cpy-rgt{
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.full .footer .l-foot .cpy-rgt2{
+        height: 5vh;
+        width: inherit;
+        margin-left: 20px;
+        color: grey;
+        font-size: 15px;
+        /* background-color: grey; */
+        border: 3px solid white;
+        opacity: .8;
+        border-left-color:  rgb(209, 206, 206);
+        padding-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.full .footer .r-foot{
+  width: 48%;
+  height: 10vh;
+  float: right;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.full .footer .r-foot a{
+  text-decoration: none;
+}
+.full .footer .r-foot a img{
+       width: 25px;
+       height: 25px;
+       margin: 4px;
+}
+
+  
